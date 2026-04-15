@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header p {
+    color: #ccc;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 30%;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Main Card */
+.main-card {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-card h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+/* Small buttons */
+.btn {
+    background: white;
+    color: #0072ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* Add button */
+.add-btn {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #333;
+}
+
+/* Transactions */
+.transactions {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+</style>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1>My Expense Tracker</h1>
+        <p>Track your monthly spending 💸</p>
+    </header>
+
+    <!-- Summary Cards -->
+    <section class="cards">
+        <div class="card">
+            <h3>Total Spent</h3>
+            <p>$536.67</p>
+        </div>
+
+        <div class="card">
+            <h3>Top Category</h3>
+            <p>Food 🍔</p>
+        </div>
+
+        <div class="card">
+            <h3>This Month</h3>
+            <p>April</p>
+        </div>
+    </section>
+
+    <!-- Main Card -->
+    <section class="main-card">
+        <h2>Current Balance</h2>
+        <h1>$536.67</h1>
+
+        <div class="buttons">
+            <button class="btn">Daily Bills</button>
+            <button class="btn">Vehicle</button>
+            <button class="btn">Meals</button>
+        </div>
+
+        <button class="add-btn">+ Add Expense</button>
+    </section>
+
+    <!-- Transactions -->
+    <section class="transactions">
+        <h2>Recent Transactions</h2>
+
+        <div class="transaction">
+            <span>Groceries</span>
+            <span>$50</span>
+        </div>
+
+        <div class="transaction">
+            <span>Petrol</span>
+            <span>$30</span>
+        </div>
+
+        <div class="transaction">
+            <span>Shopping</span>
+            <span>$120</span>
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>
