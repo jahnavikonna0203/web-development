@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>minor project 1</title>
 </head>
 <body>
     <!DOCTYPE html>
@@ -14,32 +14,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+ 
 
 body {
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: white;
+
+    background: linear-gradient(to right, #7abdec, #0a498d,#7abdec);
+    color:white;
+    flex-wrap: wrap;
 }
 
 .container {
     width: 90%;
     max-width: 900px;
-    margin: 30px auto;
+    margin:auto;
 }
 
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-header p {
-    color: #ccc;
+header h3 {
+    color: #c4c1c1;
 }
 
 /* Cards */
@@ -50,70 +47,68 @@ header p {
 }
 
 .card {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    width: 30%;
+    background: rgba(189, 179, 179, 0.137);
+    padding: 10px;
+    width: 20%;
     border-radius: 15px;
     text-align: center;
-    backdrop-filter: blur(10px);
-    transition: 0.3s;
+}
+/*list*/
+.lists {
+    background: rgba(255,255,255,0.1);
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* Main Card */
 .main-card {
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    padding: 30px;
-    border-radius: 25px;
+    background: linear-gradient(to right, #14728b, #1f4b81);
+    padding: 20px;
+    border-radius: 20px;
     text-align: center;
     margin-bottom: 30px;
 }
-
-.main-card h1 {
-    font-size: 40px;
-    margin: 10px 0;
+.main-card h1{
+    padding-bottom: 30px;
 }
 
-/* Buttons */
 .buttons {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
-/* Small buttons */
-.btn {
+
+.but {
     background: white;
     color: #0072ff;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 20px;
-    font-weight: bold;
-    transition: 0.3s;
+    font-size:larger;
 }
 
-.btn:hover {
-    background: #ddd;
+.but:hover {
+    background:rgb(50, 48, 48);
 }
 
-/* Add button */
-.add-btn {
-    margin-top: 10px;
-    padding: 12px 25px;
+.add-but {
+    padding:10px;
     background: black;
     color: white;
-    border-radius: 30px;
-    transition: 0.3s;
+    border-radius: 20px;
+    font-size: larger;
 }
 
-.add-btn:hover {
-    background: #333;
+.add-but:hover {
+    background:rgb(113, 112, 112);
 }
 
-/* Transactions */
 .transactions {
-    background: rgba(255,255,255,0.1);
+    background: rgba(198, 181, 181, 0.1);
     padding: 20px;
     border-radius: 15px;
 }
@@ -121,8 +116,7 @@ header p {
 .transaction {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
 }
 </style>
 <body>
@@ -132,65 +126,86 @@ header p {
     <!-- Header -->
     <header>
         <h1>My Expense Tracker</h1>
-        <p>Track your monthly spending 💸</p>
+        <h3>Track your monthly spending 💳</h3>
     </header>
 
-    <!-- Summary Cards -->
+    <!-- Cards -->
     <section class="cards">
         <div class="card">
-            <h3>Total Spent</h3>
-            <p>$536.67</p>
+            <h2>Total Spent</h2>
+            <p>60,000</p>
         </div>
 
         <div class="card">
-            <h3>Top Category</h3>
-            <p>Food 🍔</p>
+            <h2>Top Category</h2>
+            <p>Food 🍔🍕🍩</p>
         </div>
 
         <div class="card">
-            <h3>This Month</h3>
+            <h2>This Month </h2>
             <p>April</p>
         </div>
     </section>
 
-    <!-- Main Card -->
-    <section class="main-card">
-        <h2>Current Balance</h2>
-        <h1>$536.67</h1>
+<!--- list -->
+    <section class="lists">
+        <h2>List of expense Category  </h2>
+      <div class="list">
+        <span>Food</span>
+            <span>21,000</span>
+      </div>
 
-        <div class="buttons">
-            <button class="btn">Daily Bills</button>
-            <button class="btn">Vehicle</button>
-            <button class="btn">Meals</button>
-        </div>
+      <div class="list">
+        <span>transport</span>
+            <span>4000</span>
+      </div>
 
-        <button class="add-btn">+ Add Expense</button>
+      <div class="list">
+        <span>Shopping</span>
+            <span>14,000</span>
+      </div>
+
+      <div class="list">
+        <span>Entertainment</span>
+            <span>6000</span>
+      </div>
     </section>
 
-    <!-- Transactions -->
+    <!--  Cards -->
+    <section class="main-card">
+        <h1>Current Balance  :  60,000 </h1>
+
+        <div class="buttons">
+            <button class="but">Daily Bills</button>
+            <button class="but">Vehicle </button>
+            <button class="but">Meals</button>
+        </div>
+
+        <button class="add-but"> + Add Expense</button>
+    </section>
+
+    <!--recent Transactions -->
     <section class="transactions">
         <h2>Recent Transactions</h2>
 
         <div class="transaction">
             <span>Groceries</span>
-            <span>$50</span>
+            <span>1000</span>
         </div>
 
         <div class="transaction">
             <span>Petrol</span>
-            <span>$30</span>
+            <span>500</span>
         </div>
 
         <div class="transaction">
             <span>Shopping</span>
-            <span>$120</span>
+            <span>1500</span>
         </div>
-
+        
     </section>
 
 </div>
 
-</body>
-</html>
 </body>
 </html>
